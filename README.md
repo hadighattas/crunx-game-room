@@ -11,4 +11,6 @@ This porject has been done for a course at AUB: EECE 350.
 ## Database:
 See the included sql script.
 
-## Screenshots
+## Screenshots:
+![alt text]( https://github.com/hadighattas/crunx-game-room/blob/master/screenshots/login.jpg)
+
