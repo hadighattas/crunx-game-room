@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ap" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #282828;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="PersonalInfo.PersonalInfoController">
+   <children>
+      <Pane layoutX="941.0" layoutY="13.0" prefHeight="75.0" prefWidth="317.0" style="-fx-border-color: #ffce2e; -fx-border-width: 3; -fx-border-radius: 15;">
+         <children>
+            <ImageView fx:id="defaultProfile" fitHeight="71.0" fitWidth="71.0" layoutX="15.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="username1" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="18.0" prefHeight="38.0" prefWidth="150.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="91.0" layoutY="101.0" prefHeight="595.0" prefWidth="1105.0" style="-fx-border-color: #ffce2e; -fx-border-width: 3; -fx-border-radius: 15;">
+         <children>
+            <JFXTextArea fx:id="email" focusColor="#ffce2e" layoutX="184.0" layoutY="200.0" prefHeight="19.0" prefWidth="595.0" style="-fx-text-fill: #ffffff;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextArea>
+            <JFXTextArea fx:id="username" focusColor="#ffce2e" layoutX="184.0" layoutY="100.0" prefHeight="19.0" prefWidth="262.0" style="-fx-text-fill: #ffffff;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextArea>
+            <JFXToggleButton fx:id="emailVisible" layoutX="802.0" layoutY="197.0" prefHeight="58.0" prefWidth="175.0" text="visible" textFill="WHITE" toggleColor="#ffce2e" />
+            <JFXTextArea fx:id="age" focusColor="#ffce2e" layoutX="184.0" layoutY="400.0" prefHeight="19.0" prefWidth="262.0" style="-fx-text-fill: #ffffff;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextArea>
+            <JFXTextArea fx:id="country" focusColor="#ffce2e" layoutX="184.0" layoutY="300.0" prefHeight="19.0" prefWidth="262.0" style="-fx-text-fill: #ffffff;">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </JFXTextArea>
+            <JFXToggleButton fx:id="countryVisible" layoutX="479.0" layoutY="300.0" prefHeight="58.0" prefWidth="175.0" text="visible" textFill="WHITE" toggleColor="#ffce2e" />
+            <JFXToggleButton fx:id="ageVisible" layoutX="479.0" layoutY="409.0" prefHeight="58.0" prefWidth="175.0" text="visible" textFill="WHITE" toggleColor="#ffce2e" />
+            <JFXButton fx:id="update" buttonType="RAISED" layoutX="817.0" layoutY="399.0" onAction="#makeUpdate" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #585858;" text="Update" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="home" fitHeight="70.0" fitWidth="70.0" layoutX="30.0" layoutY="505.0" onMouseClicked="#makeMenu" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/homebutton.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="74.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="53.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="63.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="80.0" layoutY="445.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="message" buttonType="RAISED" layoutX="817.0" layoutY="467.0" onAction="#sendMessage" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #585858;" text="Send Message" textFill="WHITE">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </JFXButton>
+            <Text fill="WHITE" layoutX="640.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tic Tac Toe score:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="649.0" layoutY="122.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blackjack score:">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Label fx:id="scoret" layoutX="894.0" layoutY="32.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreb" layoutX="894.0" layoutY="92.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

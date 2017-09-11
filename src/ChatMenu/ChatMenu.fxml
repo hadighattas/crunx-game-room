@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="ap" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #282828;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ChatMenu.ChatMenuController">
+   <children>
+      <Pane layoutX="35.0" layoutY="38.0" opacity="0.45" prefHeight="644.0" prefWidth="240.0" style="-fx-background-color: #282828; -fx-background-radius: 10; -fx-border-color: #ffce2e; -fx-border-width: 3; -fx-border-radius: 15;">
+         <children>
+            <JFXButton fx:id="GameButton" buttonType="RAISED" layoutX="30.0" layoutY="50.0" onMouseEntered="#makeGamesMenu" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #585858; -fx-border-radius: 2; -fx-border-width: 2;" text="Games" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="ContactUsButton" buttonType="RAISED" layoutX="30.0" layoutY="350.0" onMouseEntered="#makeContactUsMenu" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #585858;" text="Contact Us" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+            <ImageView fx:id="rotatingLogo" fitHeight="94.0" fitWidth="240.0" layoutX="2.0" layoutY="464.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/output_za2R2d.gif" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="FriendsButton" buttonType="RAISED" layoutX="30.0" layoutY="150.0" onMouseEntered="#makeFriendsMenu" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #585858; -fx-border-radius: 2; -fx-border-width: 2;" text="Friends" textFill="WHITE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <Pane layoutX="941.0" layoutY="13.0" opacity="0.5" prefHeight="75.0" prefWidth="317.0" style="-fx-border-color: #ffce2e; -fx-border-width: 3; -fx-border-radius: 15;">
+         <children>
+            <ImageView fx:id="defaultProfile" fitHeight="84.0" fitWidth="71.0" layoutX="15.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../images/icon-user-default.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="username" alignment="CENTER" contentDisplay="CENTER" layoutX="105.0" layoutY="18.0" prefHeight="38.0" prefWidth="150.0" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <JFXListView fx:id="ListView" layoutX="999.0" layoutY="340.0" prefHeight="335.0" prefWidth="238.0" style="-fx-background-color: #282828; -fx-border-color: #ffce2e; -fx-border-radius: 15; -fx-border-width: 3; -fx-progress-color: red;" />
+      <Text fill="WHITE" layoutX="1055.0" layoutY="334.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Online Friends">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="ChatButton" buttonType="RAISED" layoutX="65.0" layoutY="288.0" prefHeight="50.0" prefWidth="180.0" style="-fx-background-color: #585858;" text="Chat" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </JFXButton>
+      <Pane layoutX="285.0" layoutY="38.0" onMouseExited="#makeMenu" prefHeight="643.0" prefWidth="634.0" style="-fx-border-radius: 15; -fx-border-width: 3; -fx-border-color: #ffce2e;">
+         <children>
+            <JFXListView fx:id="allFriends" layoutX="27.0" layoutY="199.0" prefHeight="312.0" prefWidth="229.0" style="-fx-background-color: #282828;" stylesheets="@../listviewselect.css" />
+            <Text fill="WHITE" layoutX="82.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Friends :">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+            <JFXButton fx:id="GlobalChat" buttonType="RAISED" layoutX="415.0" layoutY="313.0" onAction="#makeGlobalChat" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: #585858; -fx-border-radius: 2; -fx-border-width: 2;" text="Global Chat" textFill="WHITE" />
+            <JFXButton fx:id="startPrivate" buttonType="RAISED" layoutX="79.0" layoutY="531.0" onAction="#makeStartPrivate" prefHeight="42.0" prefWidth="124.0" style="-fx-background-color: #585858; -fx-border-radius: 2; -fx-border-width: 2;" text="Send Message" textFill="WHITE" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

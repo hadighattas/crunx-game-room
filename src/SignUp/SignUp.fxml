@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #282828;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="SignUp.SignUpController">
+    <children>
+        <Pane layoutX="306.0" layoutY="184.0" prefHeight="503.0" prefWidth="669.0" style="-fx-background-color: #282828; -fx-background-radius: 20; -fx-border-color: #ffce2e; -fx-border-radius: 15; -fx-border-width: 3;">
+            <children>
+                <JFXTextField fx:id="mail" focusColor="#ffce2e" labelFloat="true" layoutX="59.0" layoutY="48.0" onKeyReleased="#checkEmail" prefHeight="29.0" prefWidth="554.0" promptText="Email" style=" -fx-text-fill: white;" />
+                <JFXTextField fx:id="user" focusColor="#ffce2e" labelFloat="true" layoutX="62.0" layoutY="116.0" prefHeight="25.0" prefWidth="249.0" promptText="Username" style=" -fx-text-fill: white;" />
+                <JFXPasswordField fx:id="pass" focusColor="#ffce2e" labelFloat="true" layoutX="59.0" layoutY="180.0" onKeyReleased="#checkPassword" prefHeight="29.0" prefWidth="249.0" promptText="Password" style=" -fx-text-fill: white;" />
+                <JFXPasswordField fx:id="confPass" focusColor="#ffce2e" labelFloat="true" layoutX="62.0" layoutY="238.0" onKeyReleased="#checkPassword" prefHeight="29.0" prefWidth="249.0" promptText="Confirm Password" style=" -fx-text-fill: white;" />
+                <JFXTextField fx:id="country" focusColor="#ffce2e" labelFloat="true" layoutX="360.0" layoutY="181.0" prefHeight="29.0" prefWidth="249.0" promptText="Country" style=" -fx-text-fill: white;" />
+                <JFXTextField fx:id="age" focusColor="#ffce2e" labelFloat="true" layoutX="360.0" layoutY="238.0" prefHeight="28.0" prefWidth="249.0" promptText="Age" style=" -fx-text-fill: white;" />
+                <JFXTextField fx:id="quest" focusColor="#ffce2e" labelFloat="true" layoutX="62.0" layoutY="302.0" prefHeight="29.0" prefWidth="554.0" promptText="Security Question" style=" -fx-text-fill: white;" />
+                <JFXTextField fx:id="answer" focusColor="#ffce2e" labelFloat="true" layoutX="59.0" layoutY="371.0" onAction="#makeSignUp" prefHeight="29.0" prefWidth="249.0" promptText="Answer" style=" -fx-text-fill: white;" />
+
+                <JFXButton fx:id="signUp" buttonType="RAISED" layoutX="59.0" layoutY="437.0" onAction="#makeSignUp" prefHeight="25.0" prefWidth="127.0" style="-fx-background-color: #494949;" text="Confirm" textFill="WHITE">
+                    <effect>
+                        <DropShadow blurType="GAUSSIAN" />
+                    </effect>
+                </JFXButton>
+            <JFXToggleButton fx:id="gender" layoutX="471.0" layoutY="108.0" text="F" textFill="#e1e1e1" toggleColor="#ffce2e" />
+            <Label layoutX="462.0" layoutY="127.0" text="M" textFill="#e1e1e1" />
+            <Label layoutX="360.0" layoutY="122.0" prefHeight="31.0" prefWidth="79.0" text="Gender" textFill="#e1e1e1" />
+            <Label fx:id="message" layoutX="308.0" layoutY="437.0" prefHeight="31.0" prefWidth="305.0" textFill="#ff2f2f" />
+            <ImageView fx:id="checkPassword" fitHeight="28.0" fitWidth="28.0" layoutX="277.0" layoutY="234.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="checkEmail" fitHeight="28.0" fitWidth="28.0" layoutX="584.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true" />
+            </children></Pane>
+      <ImageView fitHeight="140.0" fitWidth="345.0" layoutX="468.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../CRUNX.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

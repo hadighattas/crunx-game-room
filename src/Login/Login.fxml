@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #282828;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginController">
+   <children>
+      <Pane layoutX="397.0" layoutY="246.0" prefHeight="313.0" prefWidth="488.0" style="-fx-background-color: #282828; -fx-background-radius: 20; -fx-border-color: #ffce2e; -fx-border-radius: 15; -fx-border-width: 3;">
+         <children>
+            <JFXTextField fx:id="user" focusColor="#ffce2e" labelFloat="true" layoutX="93.0" layoutY="47.0" prefHeight="37.0" prefWidth="227.0" promptText="Username" style="-fx-text-fill: white;">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font></JFXTextField>
+            <JFXPasswordField fx:id="pass" focusColor="#ffce2e" labelFloat="true" layoutX="93.0" layoutY="124.0" onAction="#makeLogin" prefHeight="37.0" prefWidth="227.0" promptText="Password" style="-fx-text-fill: white;">
+               <font>
+                  <Font name="Calibri" size="18.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton fx:id="login" buttonType="RAISED" layoutX="93.0" layoutY="201.0" onAction="#makeLogin" style="-fx-background-color: #494949;" text="LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="signup" buttonType="RAISED" layoutX="179.0" layoutY="201.0" onAction="#makeSignup" prefHeight="29.0" prefWidth="76.0" style="-fx-background-color: #494949;" text="SIGN UP" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="16.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="forgotPassword" layoutX="320.0" layoutY="205.0" onAction="#makeForgot" style="-fx-background-color: #282828;" text="Forgot Password ?" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label fx:id="message" layoutX="92.0" layoutY="256.0" prefHeight="31.0" prefWidth="305.0" textFill="#ff2f2f" />
+         </children>
+      </Pane>
+      <ImageView fitHeight="140.0" fitWidth="345.0" layoutX="468.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../CRUNX.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
