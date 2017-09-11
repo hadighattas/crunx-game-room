@@ -9,6 +9,6 @@ This porject has been done for a course at AUB: EECE 350.
 3. [ControlsFX](http://fxexperience.com/controlsfx/)
 
 ## Database:
-See Sql script included.
+See the included sql script.
 
 ## Screenshots
