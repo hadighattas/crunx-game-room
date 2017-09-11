@@ -12,5 +12,8 @@ This porject has been done for a course at AUB: EECE 350.
 See the included sql script.
 
 ## Screenshots:
-![alt text]( https://github.com/hadighattas/crunx-game-room/blob/master/screenshots/login.jpg) ![alt text]( https://github.com/hadighattas/crunx-game-room/blob/master/screenshots/menu.jpg) 
-
+![alt text]( https://github.com/hadighattas/crunx-game-room/blob/master/screenshots/login.jpg)
+![alt text]( https://github.com/hadighattas/crunx-game-room/blob/master/screenshots/menu.jpg)
+![alt text]( https://github.com/hadighattas/crunx-game-room/blob/master/screenshots/chat.jpg)
+![alt text]( https://github.com/hadighattas/crunx-game-room/blob/master/screenshots/tictactoe.jpg)
+![alt text]( https://github.com/hadighattas/crunx-game-room/blob/master/screenshots/blackjack.jpg)
